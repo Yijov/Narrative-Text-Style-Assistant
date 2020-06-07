@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Apariencia/SCSS/main.css">
+    <title>DVega</title>
+</head>
+<body>
+
+    <div class="container">
+        <!--top bar with logo of the program-->
+        <div id="head_bar">
+            <h1> LOGO DVega</h1>
+        </div>
+        <!--lateral panel for main menu-->
+        <div class="panel" id="lateral_menu">
+            <h2>Seleccione el tipo de Texto</h2>
+           <ul>
+               <li>Poesía</li>
+               <li>Cuento</li>
+               <li>Novela</li>
+               <li>Ensayo</li>
+               <li>Haiku</li>
+           </ul>
+        </div>
+        <!--Area to Paste texts or upload file-->
+        <div class="panel" id="work_area">
+            <input type="text" id="text_box">
+        </div>
+        <!--Area to show the output of the program-->
+        <div class="panel" id="analisis_panel">
+        <!--silabels count panel-->
+         <div class="panel" id="metric_panel">
+            <table id="metric">
+        
+                <tr><th>Métrica</th></tr>
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr> 
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr>
+                <tr><td>verso analizado</td></tr> 
+            </table>
+         </div>
+
+         <hr>
+         <!--Resultados numéricos del análisis-->
+         <div id="statistic_Panel">
+            <table id="statistics">
+                <tr><th>Estadisticas</th></tr>
+                <tr><td>Palabras repetidas: 2 </td></tr>
+                <tr><td>Cantidad de versos: 10  </td></tr>
+                <tr><td>Tipo de poema: Prosa </td></tr>
+            </table>
+         </div>
+
+         <hr>
+    
+         <div>
+         <table id="recomentations">
+            <tr><th>Recomendaciones</th></tr>
+            <tr><td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis itaque ex in velit, incidunt modi fuga, laudantium expedita, exercitationem fugit eius suscipit nemo mollitia tempora. Soluta nihil adipisci illo ad. </td></tr>
+            <tr><td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis itaque ex in velit, incidunt modi fuga, laudantium expedita, exercitationem fugit eius suscipit nemo mollitia tempora. Soluta nihil adipisci illo ad.  </td></tr>
+            <tr><td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis itaque ex in velit, incidunt modi fuga, laudantium expedita, exercitationem fugit eius suscipit nemo mollitia tempora. Soluta nihil adipisci illo ad. </td></tr>
+        </table>
+        </div>
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="/Logica/app.js"></script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/View/SCSS/main.css">
+    <title>DVega</title>
+</head>
+<body>
+    <div id="head_bar">
+        <h1> [LOGO] D Vega</h1>
+    </div>
+    <div class="container">
+        <!--top bar with logo of the program-->
+        
+        <!--lateral panel for main menu-->
+        <div class="sidenav">
+            <a href="#">Poesía</a>
+            <a href="#">Cuento</a>
+            <a href="#">Novela</a>
+            <a href="#">Ensayo</a>
+            <a href="#">Haiku</a>
+          </div>
+        <!--Area to Paste texts or upload file-->
+        <div class="panel" id="work_area">
+            <form action="">
+                <textarea name="Texto" id="work_area_text_box" maxlength="4000" placeholder="Introduzca su texto aquí " spellcheck="False" required></textarea>
+                <input type="submit" class="btn" value="Analizar">
+                <input type="submit" class="btn" value="Limpiar">
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+<script src="/Logica/app.js"></script>
+</html>

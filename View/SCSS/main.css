@@ -1,0 +1,97 @@
+body {
+  background: #f1f1f1;
+  color: #f1f1f1;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+  margin-left: 6rem;
+  text-shadow: 1px 1px 0px #201995;
+}
+
+.btn {
+  background-color: blue;
+  color: #f1f1f1;
+  border-radius: 6px;
+  border: 1px solid #201995;
+  display: inline-block;
+  color: #f1f1f1;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #201995;
+  margin: 0.8em 0 0.5em 0;
+}
+
+.panel {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.container {
+  background: #201995;
+  background: -webkit-gradient(linear, left top, right top, color-stop(41%, #201995), color-stop(70%, #201970), color-stop(98%, #201960));
+  background: linear-gradient(90deg, #201995 41%, #201970 70%, #201960 98%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  height: 80vh;
+  padding: 2rem;
+  border-radius: 6px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#work_area {
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+#work_area_text_box {
+  height: 30rem;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 85%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 10rem;
+  /* Set the width of the sidebar */
+  background: #201995;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 35px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: blue;
+  /* When you mouse over the navigation links, change their color */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-import POEM from "./UI.js"
+import {POETRY as POEM}  from "./texan.js" 
 const textForm = document.querySelector("#textForm");
 let activeButton = document.getElementsByClassName("active");
 let activeButtonID = activeButton[0].getAttribute("id");
@@ -15,7 +15,7 @@ textForm.addEventListener("submit", (e)=> {
     e.preventDefault();
     switch (activeButtonID) {
         case "poem-btn":
-            console.log(POEM.getVerses());
+            console.log(POEM.getVerses(textForm));
             break;
         case "tales-btn":
             console.log(POEM.getVerses());

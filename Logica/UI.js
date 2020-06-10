@@ -1,9 +1,8 @@
-export default class UI{
+export default class POEM{
      //gets the text to analize
-    static getVersos(){
-        let textBoxText = document.getElementById("work_area_text_box").value
+    static getVerses(){
+        let textBoxText = document.getElementById("work-area_text-box").value
         let textArray = textBoxText.split(/\n/g);
-        console.log(textArray);
         return textArray;
 
     }

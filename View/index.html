@@ -7,24 +7,24 @@
     <title>DVega</title>
 </head>
 <body>
+    <!--top bar with logo of the program-->
     <div id="head_bar">
         <h1> [LOGO] D Vega</h1>
     </div>
-    <div class="container">
-        <!--top bar with logo of the program-->
+    <div class="container" id="poem">
         
         <!--lateral panel for main menu-->
         <div class="sidenav">
-            <a href="#">Poesía</a>
-            <a href="#">Cuento</a>
-            <a href="#">Novela</a>
-            <a href="#">Ensayo</a>
-            <a href="#">Haiku</a>
+            <a href="#" id="poem-btn" class="sidenav-menu active">Poesía</a>
+            <a href="#" id="tales-btn" class="sidenav-menu">Cuento</a>
+            <a href="#" id="novel-btn" class="sidenav-menu">Novela</a>
+            <a href="#" id="esey-Btn" class="sidenav-menu">Ensayo</a>
+            <a href="#" id="haiku-Btn"class="sidenav-menu">Haiku</a>
           </div>
         <!--Area to Paste texts or upload file-->
-        <div class="panel" id="work_area">
+        <div class="panel" id="work-area">
             <form id="textForm">
-                <textarea name="Texto" id="work_area_text_box" maxlength="4000" placeholder="Introduzca su texto aquí " spellcheck="False" required></textarea>
+                <textarea name="Texto" id="work-area_text-box" maxlength="4000" placeholder="Introduzca su texto aquí " spellcheck="False" required></textarea>
                 <input type="submit" class="btn" id="btn-analizar" value="Analizar">
                 <input type="submit" class="btn" id="btn-despejarar" value="Despejar">
             </form>

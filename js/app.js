@@ -1,14 +1,12 @@
 import {POETRY as POEM}  from "./texan.js" 
 const textForm = document.getElementById("textForm");
 const txtBox = document.getElementById("work-area_text-box");
+const clearButon = document.getElementById("btn-clear");
 let activeButton = document.getElementsByClassName("active");
 let activeButtonID = activeButton[0].getAttribute("id");
 
 
 
-
-
-//General Functions
 //Event Listeners
 //obtain text from textbox depending on the tipe of text to analize
 textForm.addEventListener("submit", (e)=> {
@@ -32,6 +30,8 @@ textForm.addEventListener("submit", (e)=> {
      }
    });
 
+// clear the screen
+clearButon.addEventListener("click", ()=> window.location.reload());
 
 
 

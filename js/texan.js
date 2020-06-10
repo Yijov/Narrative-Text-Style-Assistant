@@ -1,13 +1,12 @@
     
     
-    
-    //manages the poetry analisys    
-        
-    
-    class POETRY {
-     //gets the text to analize
-        static getVerses(txtBoxID){
-            let textBoxText = document.getElementById({txtBoxID}).value
+    //Annalisis algorithms
+      
+    class POETRY { //manages the poetry analisys  
+     
+        //gets the text to analize and divides it in verse
+        static getVerses(txtBox){
+            let textBoxText = txtBox.value;
             let textArray = textBoxText.split(/\n/g);
             return textArray;
 

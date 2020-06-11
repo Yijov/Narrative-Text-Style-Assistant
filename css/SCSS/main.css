@@ -4,7 +4,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-h1 {
+#head-bar-logo-text {
   color: blue;
   margin-left: 6rem;
   text-shadow: 1px 1px 0px #201995;
@@ -24,6 +24,10 @@ h1 {
   text-decoration: none;
   text-shadow: 1px 1px 0px #201995;
   margin: 0.8em 0 0.5em 0;
+}
+
+.btn:hover {
+  color: lightblue;
 }
 
 .panel {
@@ -81,7 +85,7 @@ h1 {
 }
 
 .sidenav a:hover {
-  color: blue;
+  color: lightblue;
   /* When you mouse over the navigation links, change their color */
 }
 

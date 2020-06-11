@@ -1,4 +1,4 @@
-import {POETRY as POEM}  from "./texan.js" 
+import {TEXAN as TEXT}  from "./texan.js" 
 const textForm = document.getElementById("textForm");
 const txtBox = document.getElementById("work-area_text-box");
 const clearButon = document.getElementById("btn-clear");
@@ -13,16 +13,16 @@ textForm.addEventListener("submit", (e)=> {
      e.preventDefault();
      switch (activeButtonID) {
          case "poem-btn":
-             console.log(POEM.getVerses(txtBox));
+             console.log(TEXT.getVerses(txtBox));
              break;
          case "tales-btn":
-             console.log(POEM.getVerses());
+             console.log(TEXT.getVerses());
              break;
          case "novel-btn":
-             console.log(POEM.getVerses());
+             console.log(TEXT.getVerses());
              break;
          case "esey-Btn":
-             console.log(POEM.getVerses());
+             console.log(TEXT.getVerses());
              break;
          default:
              console.log("nextthing");

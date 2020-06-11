@@ -1,16 +1,20 @@
 $primary_color:#201995;
 $button_color: blue; 
 $text_color: #f1f1f1;
+$hover_color: lightblue;
+$body-background_color:#f1f1f1;
 $font: Helvetica,Arial,sans-serif;
+$button-font:Verdana;
+
 
 
 
 body{
-    background: $text_color;
+    background: $body-background_color;
     color:$text_color;
     font-family: $font;
 }
-h1{
+#head-bar-logo-text {
     color: $button_color;
     margin-left: 6rem;
     text-shadow: 1px 1px 0px $primary_color;
@@ -24,13 +28,16 @@ h1{
     border: 1px solid $primary_color ;
     display: inline-block;
     color: $text_color;
-    font-family: Verdana;
+    font-family: $button-font;
     font-size: 12px;
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
     text-shadow: 1px 1px 0px $primary_color;
     margin: 0.8em 0 0.5em 0;
+    &:hover {
+        color: $hover_color;
+    }
 }
 
 .panel{
@@ -76,7 +83,7 @@ h1{
         color:  $text_color;
         display: block;
         &:hover {
-            color: $button_color; /* When you mouse over the navigation links, change their color */
+            color: $hover_color; /* When you mouse over the navigation links, change their color */
           }
       }
   }

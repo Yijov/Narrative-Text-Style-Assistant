@@ -7,13 +7,14 @@ let activeButtonID = activeButton[0].getAttribute("id");
 
 
 
-//Event Listeners
+                                    //Event Listeners
 //obtain text from textbox depending on the tipe of text to analize
 textForm.addEventListener("submit", (e)=> {
      e.preventDefault();
      switch (activeButtonID) {
          case "poem-btn":
-             console.log(TEXT.getVerses(txtBox));
+             //console.log(TEXT.getVerses(txtBox).map(TEXT.getSyllables));
+             console.log(TEXT.getSyMetric(txtBox));
              break;
          case "tales-btn":
              console.log(TEXT.getVerses());

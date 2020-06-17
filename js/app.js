@@ -13,8 +13,7 @@ textForm.addEventListener("submit", (e)=> {
      e.preventDefault();
      switch (activeButtonID) {
          case "poem-btn":
-             //console.log(TEXT.getVerses(txtBox).map(TEXT.getSyllables));
-             console.log(TEXT.getSyMetric(txtBox));
+             console.log(TEXT.getMetric(txtBox));
              break;
          case "tales-btn":
              console.log(TEXT.getVerses());

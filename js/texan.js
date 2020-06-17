@@ -1,7 +1,7 @@
     
     //Annalisis algorithms
 
-const syllableRegex = /[^aeiouy]*[aeiouy]+(?:[^aeiouym]*$|[^aeiouy](?=[^aeiouyhlr]))?/gi; //ajustar para yatos, sinalefas y acentuadas
+const syllableRegex = /[^aeiouy]*[aeiouyóá]+(?:[^aeiouy]$|[^aeiouy](?=[^aeiouyhrln]))?/gi; //ajustar para yatos, sinalefas y acentuadas
       
 class TEXAN //manages the text analisys
 {   
@@ -21,13 +21,17 @@ class TEXAN //manages the text analisys
         return text.match(syllableRegex);
     }   
 
-    //devides a texbox into metric units (needs to include Hiphenization)
-    static getSyMetric(txtBOX)
-    {   
+    //devides a texbox into metric units 
+    static getMetric(txtBOX)
+    {   //rompar silabas de mas de 4 letras que incluyen acento
+        //trabajar separación por yato
+        //needs to include Hiphenization
+
         let textBoxText = txtBOX.value;
         textBoxText = textBoxText.trim().split(/\n/g).map((element)=> element.trim());
-        return textBoxText.map((element)=> element.replace(/\s/g, "")).map((element)=> element.match(syllableRegex));
-    }  
+        return textBoxText.map((element)=> element.replace(/[,:.;\s]/g, "")).map((element)=> element.match(syllableRegex));
+        
+    }
 }
 
 export {TEXAN};

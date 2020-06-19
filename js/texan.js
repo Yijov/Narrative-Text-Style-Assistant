@@ -1,7 +1,7 @@
     
     //Annalisis algorithms
 
-const syllableRegex = /[^aeiouy]*[aeiouyóá]+(?:[^aeiouy]$|[^aeiouy](?=[^aeiouyhrln]))?/gi; //ajustar para yatos, sinalefas y acentuadas
+const syllableRegex = /[^aeiouy\s]{0,3}[aeiouyóáéíú]+(?:[^aeiouy]$|[^aeiouy\s]{1,2}(?=[^aeiouyhrln]))?/gi; //ajustar para yatos, sinalefas y acentuadas
       
 class TEXAN //manages the text analisys
 {   
@@ -14,22 +14,32 @@ class TEXAN //manages the text analisys
          
     } 
 
-    //devides a word into syllables 
-    static getSyllables(wordArray)
+    //devides a textbox into syllables 
+    static getSyllables(words)
     {
-        let text = wordArray.slice();
+        let text = words.value;
+        text = text.trim().split(/\n/g).map((element)=> element.trim());
         return text.match(syllableRegex);
     }   
 
-    //devides a texbox into metric units 
+    //devides a texbox into poetic metric units 
     static getMetric(txtBOX)
-    {   //rompar silabas de mas de 4 letras que incluyen acento
+    {   
         //trabajar separación por yato
         //needs to include Hiphenization
 
-        let textBoxText = txtBOX.value;
-        textBoxText = textBoxText.trim().split(/\n/g).map((element)=> element.trim());
-        return textBoxText.map((element)=> element.replace(/[,:.;\s]/g, "")).map((element)=> element.match(syllableRegex));
+        let textB = txtBOX.value;
+        
+        
+        //removes all Extra white spaces 
+        textB = textB.trim().split(/\n/g).map((element)=> element.trim());
+        
+        
+        //splits into metric units according to regex. It does not accounts for diptongo so it needt to be refined
+        textB = textB.map((element)=> element.replace(/[,:.;\s]/g, "")).map((element)=> element.match(syllableRegex));
+        
+        
+        return textB;
         
     }
 }

@@ -1,10 +1,9 @@
     
     //Text Annalisis Methods
 
-//const syllableRegex = /[^aeiouy\s]{0,3}[aeiouyóáéíú]+(?:[^aeiouy]$|[^aeiouyt\s]{1,2}(?=[^aeiouyhrln]))?/gi; //para dividir en silabas. 
-const syllableRegex = /[^aeiouy\s]{0,3}[aeiouyóáéíú]+(?:[^aeiouy]$|[^aeiouytp\s]{1,2}(?=[^aeiouyhrln]))?/gi; //para dividir en silabas. trabaja mal para palabras con "rl" como "merlusa" = me-rlu-sa
+const syllableRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouy]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en silabas. trabaja mal para palabras con "rl"  en medio como "merlusa" = me-rlu-sa
 
-const metricRegex = /[^aeiouy\s]{0,3}[aeiouyóáéíú]+(?:[^aeiouy]$|[^aeiouyt\s]{1,2}(?=[^aeiouyhrln]))?/gi; //para dividir en unidades métricas de poesía. 
+const metricRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouyh]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en unidades métricas de poesía. 
 
 
 

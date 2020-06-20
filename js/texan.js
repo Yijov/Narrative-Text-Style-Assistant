@@ -3,7 +3,7 @@
 
 const syllableRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouy]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en silabas. trabaja mal para palabras con "rl"  en medio como "merlusa" = me-rlu-sa
 
-const metricRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouyh]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en unidades métricas de poesía. 
+const metricRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouyh]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en unidades métricas de poesía. no funciona bien con "lr" ni "rl" debe ser corregido en el algoritmo
 
 
 
@@ -21,6 +21,7 @@ class TEXAN //manages the text analisys
     //devides a textbox into syllables 
     static getSyllables(words)
     {
+        let result=[];
         let text = words.value;
         text = text.trim().split(/\n/g).map((element)=> element.trim());
         text = text.map((element)=> element.replace(/[,:.;]/g, "")).map((element)=> element.match(syllableRegex));// hasta este punto corrige la mayoría de casos.
@@ -43,7 +44,18 @@ class TEXAN //manages the text analisys
             }
         });
 
-        return text;
+        //Hiphenize lines and count syllables
+        text.map((verso)=> 
+        {
+            if(verso!=null)
+            {
+                result.push(verso.join("-"));
+                result.push(verso.length);
+            } else {
+                result.push(null);            }
+        });
+
+        return result;
     }   
 
     

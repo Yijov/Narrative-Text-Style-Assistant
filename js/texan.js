@@ -1,12 +1,12 @@
     
     //Text Annalisis Methods
 
-const syllableRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouy]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en silabas. trabaja mal para palabras con "rl"  en medio como "merlusa" = me-rlu-sa
+const syllableRegex = /([clpbmr]+[oea](?=[íóeoa])|\sy\s|[^aeiouáóáéíú\s]{0,2}([óáéíú]|[aeiou]+(y?(?![aeiouóáíéú]+)|[óáéíú]?))(?:[^aeiouyáóáéíú]$|[^aeiouytp\s]{0,1}(?=[^aeiouyhrlnáóáéíúü]))?)/gi; //para dividir en silabas. trabaja mal para palabras con "rl"  en medio como "merlusa" = me-rlu-sa debe ser corregido en el algoritmo
 
 const metricRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouyh]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en unidades métricas de poesía. no funciona bien con "lr" ni "rl" debe ser corregido en el algoritmo
 
 
-
+//y?(?![aeiou])
 class TEXAN //manages the text analisys
 {   
      
@@ -31,7 +31,7 @@ class TEXAN //manages the text analisys
         //making words like "merlusa"  equal to Mer-lu-sa instead of me-rlu-sa 
         text.map((line)=> 
         {
-            if (line!=null)// evitar los saltos de linea
+            if (line!=null)// evitar los saltos de linea nulos
             {
                 line.map(((silab, index, vers) => {
                     if((silab[0]=="r") && (silab[1]=="l")){
@@ -44,7 +44,7 @@ class TEXAN //manages the text analisys
             }
         });
 
-        //Hiphenize lines and count syllables
+        //Hiphenize lines and counts syllables
         text.map((verso)=> 
         {
             if(verso!=null)

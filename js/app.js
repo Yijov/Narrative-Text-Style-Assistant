@@ -25,6 +25,9 @@ textForm.addEventListener("submit", (e)=> {
          case "esey-Btn":
              console.log(TEXT.getVerses());
              break;
+         case "syllable-separator":
+             console.log(TEXT.getVerses());
+             break;
          default:
              console.log("nextthing");
              break;

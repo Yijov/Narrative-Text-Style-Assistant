@@ -6,7 +6,7 @@ const syllableRegex = /([htdgpl]+(iai|iái|iau|iéi|ieu|ioi|iou|uai|uau|uéi)[rn
 const metricRegex = /[^aeiouyáóáéíú\s]{0,2}([óáéíú]|[aeiouyh]+[óáéíú]?)(?:[^aeiouyáóáéíú]$|[^aeiouytpd\s]{0,1}(?=[^aeiouyhrlnáóáéíú]))?/gi; //para dividir en unidades métricas de poesía. no funciona bien con "lr" ni "rl" debe ser corregido en el algoritmo
 
 
-//y?(?![aeiou])
+
 class TEXAN //manages the text analisys
 {   
      

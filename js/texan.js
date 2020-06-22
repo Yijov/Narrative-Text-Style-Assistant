@@ -47,10 +47,9 @@ class TEXAN //manages the text analisys
         //Hiphenize lines and counts syllables
         text.map((verso)=> 
         {
-            if(verso!=null)
+            if(verso!=null) //accounts for line breaks
             {
-                result.push(verso.join("-"));
-                result.push(verso.length);
+                result.push({"splitedVerse":verso.join("-"), "length":verso.length});
             } else {
                 result.push(null);            }
         });

@@ -2,6 +2,7 @@ body {
   background: #f1f1f1;
   color: #f1f1f1;
   font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
 #head-bar-logo-text {
@@ -52,7 +53,7 @@ body {
 }
 
 #work-area {
-  width: 20rem;
+  width: 22rem;
   margin-top: 2rem;
 }
 
@@ -62,6 +63,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
+  overflow: auto;
 }
 
 /* The sidebar menu */
@@ -87,6 +89,30 @@ body {
 .sidenav a:hover {
   color: lightblue;
   /* When you mouse over the navigation links, change their color */
+}
+
+#result-panel {
+  position: relative;
+  color: #201995;
+  right: 2px;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  height: 80%;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  width: auto;
+  overflow: auto;
+}
+
+.result-panel_ul {
+  list-style: none;
+  padding: 0.7rem;
+  margin-left: 1rem;
+}
+
+.count {
+  padding: 2rem;
+  color: red;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */

@@ -1,4 +1,5 @@
 import {TEXAN as TEXT}  from "./texan.js" 
+import {LOADER}  from "./UI.js" 
 const textForm = document.getElementById("textForm");
 const txtBox = document.getElementById("work-area_text-box");
 const clearButon = document.getElementById("btn-clear");
@@ -13,7 +14,7 @@ textForm.addEventListener("submit", (e)=> {
      e.preventDefault();
      switch (activeButtonID) {
          case "poem-btn":
-             console.log(TEXT.getSyllables(txtBox));
+             console.log(LOADER.loadPoem(TEXT.getSyllables(txtBox)));
              break;
          case "tales-btn":
              console.log(TEXT.getVerses());

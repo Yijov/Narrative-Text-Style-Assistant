@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+body{
+    color:  #4aaaa5;
+    font-size: 1rem;
+    background: whitesmoke;
+    height: 100%;
+}
+
+
+
+#app-name{
+    font-size: 2rem;
+}
+#autor{
+    display: block;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    & ul li{
+        list-style-type: none;
+        margin: 0;
+        padding: 0.5rem;
+        font-weight: 600;
+      }
+
+    & ul li :link{
+        text-decoration: none;
+        
+    }
+    & a{
+        color: #4aaaa5;
+    }
+}
+
+.fas{
+
+    font-size: 4rem;
+    color:  #4aaaa5;
+}
+
+
+#input-area{
+    margin-top: 1.5rem;
+    position: relative;
+
+
+    &__form{
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+        
+    &__text-box{
+        width: 70%;
+        height: 60%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+    
+}
+
+
+
+input[type="submit"], button {
+    border: none;
+    background: #4aaaa5;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    &:hover{
+        color: #4aaaa5;
+        background:#ffffff;
+        border: 2px solid #4aaaa5;
+    }
+    
+  }
+
+  button {
+
+    display: none;
+      
+  }
+
+
+  @media screen and (max-width: 500px) {
+    body {
+      margin-left: 10px;
+    }
+    #app-name{
+        font-size: 1rem;
+    }
+
+    .fas{
+
+        font-size: 2rem;
+        color:  #4aaaa5;
+    }
+
+    a{
+        padding: 0.2rem;
+        font-weight: 100;
+      }
+
+  }

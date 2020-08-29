@@ -29,10 +29,10 @@ class Poem {
 }
 
 
-let luis = new Poem("poema");
-console.log(luis.syllabels);
-console.log(luis.verses);
-console.log(luis.metric);
+// let luis = new Poem("poema");
+// console.log(luis.syllabels);
+// console.log(luis.verses);
+// console.log(luis.metric);
 
 
 module.exports= Poem;

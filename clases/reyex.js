@@ -1,3 +1,6 @@
+
+
+
 let reyex= {
 
     //para dividir en silabas. trabaja mal para palabras con "rl" y "rn" en medio como "merlusa" = me-rlu-sa  y pierna = pie-rna debe ser corregido en el algoritmo

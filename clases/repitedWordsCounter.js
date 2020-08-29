@@ -2,6 +2,8 @@
 de arreglos de parrafor divididos por palabra resultado de la funcion splitToWords en spliter,js
 retorna un conjunto de objetos con cada palabra y su numero de veces que aparece
 */
+
+
 function repitedWordsCounter(arraysOfWorByParagraph, originalText){
     let result=[];
     let controlArray=[];
@@ -23,14 +25,21 @@ function repitedWordsCounter(arraysOfWorByParagraph, originalText){
 
 }
 
+
+
+
+
 function getStandardDeviation (array) {
     const n = array.length
     const mean = array.reduce((a, b) => a + b) / n
     return Math.sqrt(array.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b) / n)
   }
 
+
+
+
   function checkGreaterthen(num) {
-    return num >= 65;
+    return num >= 100;
   }
 
 

@@ -43,7 +43,7 @@ text.map((verso)=>
     {
         result.push({"splitedVerse":verso.join("-"), "length":verso.length});
     } else {
-        result.push(null);            }
+        result.push(null); }
 });
 
 return result;

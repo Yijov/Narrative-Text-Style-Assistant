@@ -1,0 +1,32 @@
+{
+  "name": "dvega",
+  "version": "1.0.0",
+  "description": "Narrative Text Analizing Tools",
+  "main": "index.js",
+  "scripts": {
+    "start": "node controler/server.js",
+    "dev": "nodemon controler/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Yijov/dvega.git"
+  },
+  "keywords": [
+    "narrative",
+    "text",
+    "analisys"
+  ],
+  "author": "Yirbett Joseph V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Yijov/dvega/issues"
+  },
+  "homepage": "https://gitlab.com/Yijov/dvega#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

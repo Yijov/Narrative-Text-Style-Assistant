@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/235692f253.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+    <title>El Martillo de Cervantes</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+
+            <div id="logo">
+                <sapan id="icon">
+                    <i class="fas fa-feather-alt"></i> 
+                    <span id="app-name">Text Analizer</span> 
+                </sapan>
+                <span id="autor">by Yirbett Joseph</span>  
+            </div>
+            
+
+            <ul>
+                <li><a href="#" class="link">instrucciones</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>  
+
+        </nav>
+    </header>
+
+    <section id="input-area">
+
+        <!-- <form id="input-area__form" method="POST" action="/text/analisis"> -->
+        <form id="input-area__form" >
+        <label for="input-area__text-box">Pegar texto en este espacio</label> <hr>
+            
+            <textarea id="input-area__text-box" 
+            name="input-area__text-box"  
+            rows="20" cols="70" 
+            maxlength ="100000"
+            form_id="input=area__text-box" 
+            placeholder="Pegar o escribir" 
+            required></textarea>
+            
+            <input type="submit" value="Procesar">
+            <button id="clear-button">Limpiar Cuadro</button>
+          </form>
+    </section>
+    
+</body>
+</html>

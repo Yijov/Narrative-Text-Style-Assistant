@@ -10,7 +10,7 @@ body {
   color: #4aaaa5;
   font-size: 1rem;
   background: whitesmoke;
-  height: 100%;
+  min-height: 90vh;
 }
 
 #app-name {
@@ -90,7 +90,7 @@ input[type="submit"], button {
   cursor: pointer;
   color: #ffffff;
   font-size: 16px;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 input[type="submit"]:hover, button:hover {
@@ -101,6 +101,58 @@ input[type="submit"]:hover, button:hover {
 
 button {
   display: none;
+}
+
+#analisis-display {
+  position: relative;
+  margin: auto;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 35rem;
+  width: 70%;
+  border: 2px solid grey;
+  border-radius: 4px;
+  margin-bottom: 3rem;
+}
+
+#analisis-display .display-div {
+  width: 36%;
+  max-height: 80%;
+  overflow: auto;
+  margin: auto;
+  padding: 1rem;
+}
+
+#analisis-display #muletillas {
+  width: 20%;
+}
+
+#analisis-display #muletillas div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#analisis-display #unbalanced-paragrphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 500px) {

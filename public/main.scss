@@ -1,3 +1,7 @@
+//$primaryColor:  #4aaaa5;
+$primaryColor:#3371FF;
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
 
 }
 body{
-    color:  #4aaaa5;
+    color: $primaryColor;
     font-size: 1rem;
     background: whitesmoke;
     min-height: 90vh;
@@ -38,14 +42,14 @@ nav{
         
     }
     & a{
-        color: #4aaaa5;
+        color: $primaryColor;
     }
 }
 
 .fas{
 
     font-size: 4rem;
-    color:  #4aaaa5;
+    color: $primaryColor;
 }
 
 
@@ -75,7 +79,7 @@ nav{
 
 input[type="submit"], button {
     border: none;
-    background: #4aaaa5;
+    background: $primaryColor;
     padding: 12px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -83,9 +87,9 @@ input[type="submit"], button {
     font-size: 16px;
     margin-top: 1rem;
     &:hover{
-        color: #4aaaa5;
+        color: $primaryColor;
         background:#ffffff;
-        border: 2px solid #4aaaa5;
+        border: 2px solid $primaryColor;
     }
     
   }
@@ -100,7 +104,7 @@ input[type="submit"], button {
       position: relative;
         margin: auto;
         margin-top: 2rem;
-      display: flex;
+      display: none;
       align-items: center;
       justify-self: center;
       justify-content: space-evenly;
@@ -110,7 +114,7 @@ input[type="submit"], button {
       border-radius: 4px;
       margin-bottom: 3rem;
       & .display-div{
-        width: 36%;
+        width: 40%;
         max-height: 80%;
         overflow: auto;
         margin: auto;

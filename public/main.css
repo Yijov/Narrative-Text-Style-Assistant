@@ -7,7 +7,7 @@
 }
 
 body {
-  color: #4aaaa5;
+  color: #3371FF;
   font-size: 1rem;
   background: whitesmoke;
   min-height: 90vh;
@@ -47,12 +47,12 @@ nav ul li :link {
 }
 
 nav a {
-  color: #4aaaa5;
+  color: #3371FF;
 }
 
 .fas {
   font-size: 4rem;
-  color: #4aaaa5;
+  color: #3371FF;
 }
 
 #input-area {
@@ -84,7 +84,7 @@ nav a {
 
 input[type="submit"], button {
   border: none;
-  background: #4aaaa5;
+  background: #3371FF;
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
@@ -94,9 +94,9 @@ input[type="submit"], button {
 }
 
 input[type="submit"]:hover, button:hover {
-  color: #4aaaa5;
+  color: #3371FF;
   background: #ffffff;
-  border: 2px solid #4aaaa5;
+  border: 2px solid #3371FF;
 }
 
 button {
@@ -107,13 +107,12 @@ button {
   position: relative;
   margin: auto;
   margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -125,7 +124,7 @@ button {
 }
 
 #analisis-display .display-div {
-  width: 36%;
+  width: 40%;
   max-height: 80%;
   overflow: auto;
   margin: auto;

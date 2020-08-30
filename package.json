@@ -4,8 +4,7 @@
   "description": "Narrative Text Analizing Tools",
   "main": "index.js",
   "scripts": {
-    "start": "node controler/server.js",
-    "dev": "nodemon controler/server.js"
+    "start": "node controler/server.js"
   },
   "repository": {
     "type": "git",

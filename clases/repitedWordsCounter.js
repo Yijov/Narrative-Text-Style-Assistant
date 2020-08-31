@@ -43,7 +43,7 @@ function getStandardDeviation (array) {
 
 
   function checkGreaterthen(num) {
-    return num >= 100;
+    return num >= 160;
   }
 
 

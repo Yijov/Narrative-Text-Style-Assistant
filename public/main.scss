@@ -119,15 +119,19 @@ input[type="submit"], button {
         overflow: auto;
         margin: auto;
         padding: 1rem;
+
+        
       }
 
 
 
       & #muletillas{
         width: 20%;
+       
         & div{
             display: flex;
             justify-content: space-between;
+           
         }
       } 
 

@@ -74,9 +74,9 @@ function  renderLongSentences ({paragNumber,longSentences}){
     
 }
 
-function renderParagraphsWithLowVariation({paragNumber, sentences}){
+function renderParagraphsWithLowVariation({paragraphIndex, sentences}){
     let br= document.createElement("BR");
-    UnbalancedParagraphs.innerHTML+=`<span>Párrafo ${paragNumber}</span>`;
+    UnbalancedParagraphs.innerHTML+=`<span>Párrafo ${paragraphIndex + 1}</span>`;
     UnbalancedParagraphs.innerHTML+= `<p>${sentences.join(". ")}</p>`;
     UnbalancedParagraphs.appendChild(br);
     

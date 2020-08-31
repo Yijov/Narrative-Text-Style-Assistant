@@ -6,7 +6,7 @@ function paragraphSpliter(string){
 
 function splitToWords(string){//returns an array paragraphs separated by words
         return paragraphSpliter(string)
-                .map((element)=> element.replace(/["#$@%(),:.;“”-_?!<>&/\\¡!]/gi, " "))
+                .map((element)=> element.replace(/["#$@%(),:.;“”¿?<>¡!]/gi, " "))
                 .map(parag => parag.split(" "))
 
 }
@@ -16,7 +16,7 @@ function poemUnitSpliter (reyex, poemString){ //separa palabras por verso de acu
     let result=[]; 
 let text = poemString;
 text = paragraphSpliter(text);
-text = text.map((element)=> element.replace(/["#$@%(),:.;“”]/g, ""))
+text = text.map((element)=> element.replace(/["#$@%(),:.;“”¿?<>¡!]/g, ""))
         .map((element)=> element.match(reyex));// hasta este punto corrige la mayoría de casos.
 
 //correcting exceptions

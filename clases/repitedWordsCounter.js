@@ -4,26 +4,28 @@ retorna un conjunto de objetos con cada palabra y su numero de veces que aparece
 */
 
 
-function repitedWordsCounter(arraysOfWorByParagraph, originalText){
-    let result=[];
-    let controlArray=[];
-    let textArray = arraysOfWorByParagraph;
-    textArray.forEach(paragraph => {
-        
-        paragraph.forEach(word => {
 
-            if (controlArray.indexOf(word) === -1 && word!==""){
-                const numberOfOccurrences = originalText.match(new RegExp(word, "g")).length
-                controlArray.push(word);
-                result.push({word: word, times: numberOfOccurrences});
-            }
-        })
+
+function repitedWordsCounter(splitedOriginalText){
+
+
+    let result=[];
+
+    let textArr = splitedOriginalText
+    let  arr = [...new Set(splitedOriginalText)];
+    arr.map(word => {
+      if(word!==""){
+        result.push({word: word, times: textArr.filter(c => c === word).length})
+
+      }
 
     });
+   
 
     return result;
 
 }
+
 
 
 

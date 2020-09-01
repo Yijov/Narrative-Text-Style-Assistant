@@ -43,7 +43,7 @@ function clearAll(e){
     window.scrollTo({ top: 0, behavior: 'smooth' });
     contentReady= false;
     ClearButton.style.display = "none";
-    setTimeout(function(){ analisysPanel.style.display = "none"; location.reload(); }, 500);
+    setTimeout(function(){ analisysPanel.style.display = "none"; location.reload(); }, 200);
 }
 
 
@@ -84,6 +84,7 @@ function renderParagraphsWithLowVariation({paragraphIndex, sentences}){
 
 
 function renderToScreen({muletillas, variation, longsentences }){
+    console.log(muletillas);
 
     muletillas[0]==null && Muletillas.remove()  || muletillas.sort(function(a, b){return b.times-a.times}).forEach(palabra => renderMuletilla(palabra));
     variation[0] ==null && UnbalancedParagraphs.remove() ||variation.forEach(par => renderParagraphsWithLowVariation(par)) ;

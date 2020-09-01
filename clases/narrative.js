@@ -12,7 +12,7 @@ class NarrativeText {
     }
 
     get numberOfWords(){
-        let temporal = repitedWordsCounter(splitToWords(this.narativeText), this. narativeText);
+        let temporal = repitedWordsCounter(splitToWords(this.narativeText));
         return temporal.reduce((a, b)=>a + b.times , 0);
         
     }
@@ -20,7 +20,7 @@ class NarrativeText {
 
     get  repitedWords () {
          
-         return repitedWordsCounter(splitToWords(this.narativeText), this. narativeText) ;
+         return repitedWordsCounter(splitToWords(this.narativeText)) ;
     
     }
 

@@ -5,9 +5,7 @@ function paragraphSpliter(string){
 
 
 function splitToWords(string){//returns an array paragraphs separated by words
-        return paragraphSpliter(string)
-                .map((element)=> element.replace(/["#$@%(),:.;“”¿?<>¡!]/gi, " "))
-                .map(parag => parag.split(" "))
+        return string.replace(/[\n]/gi, " ").replace(/["#$@%(),:.;“”¿?<>¡!]/gi, "").split(" ");
 
 }
 

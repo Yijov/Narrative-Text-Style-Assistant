@@ -132,7 +132,8 @@ button {
 }
 
 #analisis-display #muletillas {
-  width: 20%;
+  min-width: 20%;
+  max-width: 30%;
 }
 
 #analisis-display #muletillas div {
@@ -154,9 +155,26 @@ button {
           flex-direction: column;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   body {
     margin-left: 10px;
+    font-size: 1rem;
+  }
+  #analisis-display {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    overflow: auto;
+  }
+  #analisis-display .display-div {
+    width: 80%;
+    margin-top: 1.5rem;
+    min-height: 30%;
+  }
+  #analisis-display #muletillas {
+    max-width: 80%;
   }
   #app-name {
     font-size: 1rem;
@@ -164,6 +182,9 @@ button {
   .fas {
     font-size: 2rem;
     color: #4aaaa5;
+  }
+  #input-area__text-box {
+    width: 90%;
   }
   a {
     padding: 0.2rem;

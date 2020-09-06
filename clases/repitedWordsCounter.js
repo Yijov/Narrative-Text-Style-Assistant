@@ -4,25 +4,25 @@ retorna un conjunto de objetos con cada palabra y su numero de veces que aparece
 */
 
 
+const maxNumOfCharactersPerSentence = 160;
+
+function repitedWordsCounter(splitedOriginalText) {
 
 
-function repitedWordsCounter(splitedOriginalText){
+  let result = [];
+
+  let textArr = splitedOriginalText
+  let arr = [...new Set(splitedOriginalText)];
+  arr.map(word => {
+    if (word !== "") {
+      result.push({ word: word, times: textArr.filter(c => c === word).length })
+
+    }
+
+  });
 
 
-    let result=[];
-
-    let textArr = splitedOriginalText
-    let  arr = [...new Set(splitedOriginalText)];
-    arr.map(word => {
-      if(word!==""){
-        result.push({word: word, times: textArr.filter(c => c === word).length})
-
-      }
-
-    });
-   
-
-    return result;
+  return result;
 
 }
 
@@ -31,26 +31,27 @@ function repitedWordsCounter(splitedOriginalText){
 
 
 
-function getStandardDeviation (array) {
-    const n = array.length
-    if( n===0){ 
-        let result =[];  return result
-    } else{
+function getStandardDeviation(array) {
+  const n = array.length
+  if (n === 0) {
+    let result = []; return result
+  } else {
 
-        const mean = array.reduce((a, b) => a + b) / n
-        return Math.sqrt(array.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b) / n)}
-    
+    const mean = array.reduce((a, b) => a + b) / n
+    return Math.sqrt(array.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b) / n)
   }
 
-
-
-  function checkGreaterthen(num) {
-    return num >= 160;
-  }
+}
 
 
 
+function checkGreaterthen(num) {
+  return num >= maxNumOfCharactersPerSentence;
+}
 
 
 
-module.exports= {repitedWordsCounter, getStandardDeviation, checkGreaterthen };
+
+
+
+module.exports = { repitedWordsCounter, getStandardDeviation, checkGreaterthen };

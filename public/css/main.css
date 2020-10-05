@@ -86,6 +86,7 @@ a:hover {
   max-height: 80%;
   overflow: auto;
   margin: auto;
+  margin-bottom: 1rem;
   padding: 1rem;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);

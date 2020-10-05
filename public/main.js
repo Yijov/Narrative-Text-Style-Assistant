@@ -8,6 +8,7 @@ const analisysPanel = document.getElementById("analisis-display");
 const Muletillas = document.getElementById("muletillas");
 const LongSentences = document.getElementById("long-sentences");
 const UnbalancedParagraphs = document.getElementById("unbalanced-paragrphs");
+const sinonimsWebsite = `https://www.wordreference.com/sinonimos/`;
 
 //event listeners
 
@@ -60,7 +61,7 @@ function diaplayAnalisysPanel() {
 function renderMuletilla({ times, word }) {
   let palabra = document.createElement("DIV");
   let br = document.createElement("BR");
-  palabra.innerHTML += `<p>${word}</p> <span>${times}</span>`;
+  palabra.innerHTML += `<a href="${sinonimsWebsite}${word}" target="_blank" style="color: #032379;">${word}</a> <span>${times}</span>`;
   Muletillas.appendChild(palabra);
   Muletillas.appendChild(br);
 }

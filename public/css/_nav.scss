@@ -32,7 +32,7 @@ nav {
     font-size: 4rem;
   }
 }
-a {
+nav > a {
   color: $textColor;
   &:hover {
     color: $secundaryColor;

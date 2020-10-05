@@ -1,94 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/235692f253.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/235692f253.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="main.js"></script>
     <title>Cervantes Analizer</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
+      <nav>
+        <div id="logo">
+          <a href="/">
+            <sapan id="icon">
+              <h1 id="app-name">
+                <i class="fas fa-feather-alt"></i>Cervantes Analizer
+              </h1>
+            </sapan>
+            <span id="autor">by Yirbett Joseph</span>
+          </a>
+        </div>
 
-            <div id="logo">
-                <sapan id="icon">
-                    <i class="fas fa-feather-alt"></i>
-                    <span id="app-name">Cervantes Analizer</span>
-                </sapan>
-                <span id="autor">by Yirbett Joseph</span>
-            </div>
-
-
-            <ul>
-                <li><a href="#" class="link">instrucciones</a></li>
-                <li><a href="#" class="link">About</a></li>
-            </ul>
-
-        </nav>
+        <ul>
+          <li><a href="./instructions.html" class="link">instrucciones</a></li>
+          <li><a href="./about.html" class="link">About</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="input-area">
+      <!-- <form id="input-area__form" method="POST" action="/text/analisis"> -->
+      <form id="input-area__form">
+        <label for="input-area__text-box">Pegar texto en este espacio</label>
+        <hr />
 
-        <!-- <form id="input-area__form" method="POST" action="/text/analisis"> -->
-        <form id="input-area__form">
-            <label for="input-area__text-box">Pegar texto en este espacio</label>
-            <hr>
+        <textarea
+          id="input-area__text-box"
+          name="input-area__text-box"
+          rows="20"
+          cols="70"
+          maxlength="14000"
+          form_id="input=area__text-box"
+          placeholder="Pegar o escribir"
+          required
+        ></textarea>
 
-            <textarea id="input-area__text-box" name="input-area__text-box" rows="20" cols="70" maxlength="14000"
-                form_id="input=area__text-box" placeholder="Pegar o escribir" required></textarea>
-
-            <input type="submit" value="Analizar">
-            <button id="clear-button">Analizar otro texto</button>
-        </form>
+        <input id="analizar" type="submit" value="Analizar" />
+        <button id="clear-button">Analizar otro texto</button>
+      </form>
     </section>
 
     <section id="analisis-display">
-
-
-        <div id="muletillas" class="display-div">
-
-            <div class="display-header">
-
-                <h2>Muletillas</h2>
-
-            </div>
-
-            <br>
-
+      <div id="muletillas" class="display-div">
+        <div class="display-header">
+          <h2 class="result-title">Repeticiones</h2>
         </div>
 
-        <div id="long-sentences" class="display-div">
+        <br />
+      </div>
 
-            <div class="display-header">
-
-                <h2>Oraciones muy largas</h2>
-
-            </div>
-
-            <br>
-
+      <div id="long-sentences" class="display-div">
+        <div class="display-header">
+          <h2 class="result-title">Oraciones muy largas</h2>
         </div>
 
-        <div id="unbalanced-paragrphs" class="display-div">
+        <br />
+      </div>
 
-            <div class="display-header">
-
-                <h2>Poca variación</h2>
-
-            </div>
-
-            <br>
-
+      <div id="unbalanced-paragrphs" class="display-div">
+        <div class="display-header">
+          <h2 class="result-title">Poca variación</h2>
         </div>
 
+        <br />
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>

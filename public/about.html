@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/235692f253.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="main.js"></script>
+    <title>Cervantes Analizer</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <a href="/">
+            <sapan id="icon">
+              <h1 id="app-name">
+                <i class="fas fa-feather-alt"></i>Cervantes Analizer
+              </h1>
+            </sapan>
+            <span id="autor">by Yirbett Joseph</span>
+          </a>
+        </div>
+
+        <ul>
+          <li><a href="./instructions.html" class="link">instrucciones</a></li>
+          <li><a href="./about.html" class="link">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="info">
+      <h1>About The Code</h1>
+      <p>
+        Este es una analizador de textos construido con HTML5, SCSS/CSS y usando
+        NodeJS con Express para el backend.
+      </p>
+      <p>
+        Su funcionalidad principal es la identificar repeticiones, oraciones muy
+        largas y oraciones monótonas en textos narrativos para ayudar al autor
+        en el proceso creativo.
+      </p>
+      <p>
+        El backend recibe el texto y lo convierte en un objeto en el cual el
+        texto se descompone y se extraen los resultados como propiedades. Este
+        objeto es entonces reenviado al frontEnd el cual se encarga de organizar
+        los resultados renderizarlos en pantalla.
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+#analisis-display {
+  position: relative;
+  margin: auto;
+  margin-top: 2rem;
+  display: none;
+  align-items: center;
+  justify-self: center;
+  justify-content: space-evenly;
+  height: 35rem;
+  width: 90%;
+  border: 1px solid grey;
+  border-radius: 6px;
+  margin-bottom: 3rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background: $backgroundColor;
+  & .result-title {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  & .display-div {
+    width: 32%;
+    max-height: 80%;
+    overflow: auto;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background: white;
+    border-radius: 6px;
+
+    //scrollbar
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $primaryColor;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $primaryColor;
+    }
+  }
+
+  & #muletillas {
+    min-width: 20%;
+    max-width: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+    & div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  & #unbalanced-paragrphs {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+}

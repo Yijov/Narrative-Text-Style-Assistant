@@ -1,0 +1,20 @@
+@import "variables";
+@import "nav";
+@import "resultDisplay";
+@import "inputForm";
+@import "mediaQueryes";
+@import "info";
+
+//Resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  color: $primaryColor;
+  font-size: 1rem;
+  background: $textColor;
+  min-height: 90vh;
+}

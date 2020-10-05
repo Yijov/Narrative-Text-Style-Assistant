@@ -1,0 +1,40 @@
+nav {
+  background: $backgroundColor;
+  height: 7rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: $textColor;
+
+  & ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+    font-weight: 600;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    & :link {
+      text-decoration: none;
+    }
+  }
+
+  #app-name {
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  #autor {
+    display: block;
+    margin-left: 4.5rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .fas {
+    font-size: 4rem;
+  }
+}
+a {
+  color: $textColor;
+  &:hover {
+    color: $secundaryColor;
+  }
+}

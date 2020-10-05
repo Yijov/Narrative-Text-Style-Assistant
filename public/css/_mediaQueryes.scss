@@ -1,0 +1,39 @@
+//
+@media screen and (max-width: 750px) {
+  body {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  #analisis-display {
+    flex-direction: column;
+    width: 90%;
+    overflow: auto;
+    padding: 2rem;
+
+    & .display-div {
+      width: 80%;
+      margin-top: 1.5rem;
+      min-height: 33%;
+    }
+    & #muletillas {
+      max-width: 90%;
+    }
+  }
+  #app-name {
+    font-size: 1rem;
+  }
+
+  .fas {
+    font-size: 2rem;
+  }
+
+  #input-area__text-box {
+    width: 90%;
+  }
+
+  a {
+    padding: 0.2rem;
+    font-weight: 100;
+  }
+}

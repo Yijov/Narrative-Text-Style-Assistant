@@ -45,11 +45,11 @@ nav .fas {
   font-size: 4rem;
 }
 
-a {
+nav a {
   color: white;
 }
 
-a:hover {
+nav a:hover {
   color: #00d4ff;
 }
 
@@ -253,6 +253,29 @@ button {
   a {
     padding: 0.2rem;
     font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin-left: 0px;
+    font-size: 1rem;
+  }
+  nav #app-name {
+    font-size: 1.4rem;
+    margin-left: 5px;
+  }
+  nav .fas {
+    font-size: 1.8rem;
+    margin-left: 5px;
+  }
+  #input-area__text-box {
+    width: 90%;
+  }
+  a {
+    padding: 0;
+    font-weight: 80;
+    font-size: 0.9rem;
   }
 }
 
